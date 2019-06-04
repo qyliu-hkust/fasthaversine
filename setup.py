@@ -12,6 +12,7 @@ setup(
     maintainer='Qiyu Liu',
     maintainer_email='keiyuk.liu@gmail.com',
     url='https://github.com/qyliu-hkust/fasthaversine',
+    download_url='https://github.com/qyliu-hkust/fasthaversine/archive/0.1.0.tar.gz',
     packages=['fasthaversine'],
     license=['MIT'],
     classifiers=[
