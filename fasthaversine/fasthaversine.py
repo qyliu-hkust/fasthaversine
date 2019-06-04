@@ -52,3 +52,5 @@ def _get_avg_earth_radius(unit):
 	else:
 		raise ValueError('unit should be "km", "m", "mile", "nmile", "feet" or "inch". Found {0}.'.format(unit))
 
+	return avg_earth_radius
+
