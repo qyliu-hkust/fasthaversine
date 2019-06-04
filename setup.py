@@ -6,7 +6,8 @@ setup(
     description='A fast vectorized version of haversine distance calculation.',
     include_package_data=True,
     install_requires=['numpy'],
-
+    long_description=open('README.md').read(),
+    long_description_content_type="text/markdown",
     author='Qiyu Liu',
     author_email='keiyuk.liu@gmail.com',
     maintainer='Qiyu Liu',
