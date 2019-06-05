@@ -38,19 +38,17 @@ def haversine(points1, points2, unit='km'):
 
 def _get_avg_earth_radius(unit):
 	if unit == 'km':
-		avg_earth_radius = _AVG_EARTH_RADIUS_KM
+		return _AVG_EARTH_RADIUS_KM
 	elif unit == 'm':
-		avg_earth_radius = _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_METERS
+		return _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_METERS
 	elif unit == 'mile':
-		avg_earth_radius = _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_MILES
+		return _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_MILES
 	elif unit == 'nmile':
-		avg_earth_radius = _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_NAUTICAL_MILES
+		return _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_NAUTICAL_MILES
 	elif unit == 'feet':
-		avg_earth_radius = _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_FEETS
+		return _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_FEETS
 	elif unit == 'inch':
-		avg_earth_radius = _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_INCHES
+		return _AVG_EARTH_RADIUS_KM * _CONVERSION_TO_INCHES
 	else:
 		raise ValueError('unit should be "km", "m", "mile", "nmile", "feet" or "inch". Found {0}.'.format(unit))
-
-	return avg_earth_radius
 
