@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='fasthaversine',
-    version='0.1.1',
+    version='0.1.3',
     description='A fast vectorized version of haversine distance calculation.',
     include_package_data=True,
     install_requires=['numpy'],
@@ -15,7 +15,7 @@ setup(
     url='https://github.com/qyliu-hkust/fasthaversine',
     download_url='https://github.com/qyliu-hkust/fasthaversine/archive/0.1.1.tar.gz',
     packages=['fasthaversine'],
-    license=['MIT'],
+    license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
